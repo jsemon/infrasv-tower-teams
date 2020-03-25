@@ -1,0 +1,19 @@
+---
+- 2FA - Redhat Ansible Tower (infrasv):
+  - projects:
+    - name: logagg-server-patching
+      scm_type: git
+      scm_url: git://github.com:nytimes/logagg-server-patching.git
+      scm_branch: master
+      permissions: Admin
+    - name: jira-deployment
+      scm_type: git
+      scm_url: git://github.com:nytimes/infrasv-docker.git
+      scm_branch: master
+      permissions: Admin
+    - name: pci-server-patching
+      scm_type: git
+      scm_url: git://github.com:nytimes/pci-server-patching.git
+      scm_branch: master
+      permissions: Admin
+  organization: "NY TIMES"

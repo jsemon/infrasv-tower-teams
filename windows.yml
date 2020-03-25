@@ -1,0 +1,19 @@
+---
+- 2FA - Redhat Ansible Tower (windows):
+  - projects:
+    - name: web-server-patching
+      scm_type: git
+      scm_url: git://github.com:nytimes/web-server-patching.git
+      scm_branch: master
+      permissions: Use
+    - name: file-server-patching
+      scm_type: git
+      scm_url: git://github.com:nytimes/file-server-patching.git
+      scm_branch: master
+      permissions: Use
+    - name: pci-server-patching
+      scm_type: git
+      scm_url: git://github.com:nytimes/pci-server-patching.git
+      scm_branch: master
+      permissions: Use
+  organization: "NY TIMES"
