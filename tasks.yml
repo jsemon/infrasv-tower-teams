@@ -1,0 +1,12 @@
+---
+- name: Create teams
+  command: tower-cli projects create --scm_type {{ item.scm_type }} --scm_url {{ item.scm_url }} --scm_branch {{ item.scm_branch }} 
+  with_items: {{ projects }}
+  tags:
+    - projects
+
+- name: Associate teams to Projects
+  command: tower-cli teams grant --team {{ whatever the top level is }} --project {{ item.name }} --role {{ item.role }}
+  with_items: {{ projects }}
+  tags: 
+    - teams
