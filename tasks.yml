@@ -6,7 +6,7 @@
     - projects
 
 - name: Associate teams to Projects
-  command: tower-cli teams grant --team {{ whatever the top level is }} --project {{ item.name }} --role {{ item.role }}
+  command: tower-cli teams grant --team {{ item.team }} --project {{ item.name }} --role {{ item.role }}
   with_items: {{ projects }}
   tags: 
     - teams

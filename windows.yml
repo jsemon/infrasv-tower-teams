@@ -5,15 +5,15 @@
       scm_type: git
       scm_url: git://github.com:nytimes/web-server-patching.git
       scm_branch: master
-      permissions: Use
+      role: Use
     - name: file-server-patching
       scm_type: git
       scm_url: git://github.com:nytimes/file-server-patching.git
       scm_branch: master
-      permissions: Use
+      role: Use
     - name: pci-server-patching
       scm_type: git
       scm_url: git://github.com:nytimes/pci-server-patching.git
       scm_branch: master
-      permissions: Use
+      role: Use
   organization: "NY TIMES"
